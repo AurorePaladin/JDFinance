@@ -17,10 +17,10 @@
     "es6",
     "component"
   ],
-  "author": "cuc_ygh@163.com",
+  "author": "AurorePaladin",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/imooc/vuejs/issues"
+    "url": "https://github.com/AurorePaladin/JDFinance"
   },
   "eslintConfig": {
     "root": true,
