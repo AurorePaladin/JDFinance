@@ -8,7 +8,7 @@ module.exports = env => {
     env = {}
   }
   let plugins=[
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['docs']),
     new HtmlWebpackPlugin({template: './app/views/index.html'}),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
@@ -26,7 +26,7 @@ module.exports = env => {
   return {
     entry: ['./app/js/viewport.js','./app/js/main.js'],
     devServer: {
-      contentBase: './dist',
+      contentBase: './docs',
       hot: true,
       compress: true,
       port: 9000,
@@ -72,7 +72,7 @@ module.exports = env => {
     plugins,
     output: {
       filename: '[name].min.js',
-      path: path.resolve(__dirname, 'dist')
+      path: path.resolve(__dirname, 'docs')
     }
   }
 };
